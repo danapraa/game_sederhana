@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengaturan - StatMath</title>
+    <link rel="stylesheet" href="css/setting.css" />
+  </head>
+  <body>
+    <div class="background">
+      <video autoplay muted loop playsinline id="bgVideo">
+        <source src="assets/index.mp4" type="video/mp4" />
+        Browser tidak mendukung video.
+      </video>
+      <div class="menu-icons">
+        <button class="icon-btn">❗</button>
+        <button class="icon-btn">👩</button>
+        <button class="icon-btn active">⚙️</button>
+      </div>
+
+      <div class="settings-panel">
+        <div class="settings-header">
+          <h2>Setting</h2>
+          <button class="back-btn" onclick="goBack()">↩</button>
+        </div>
+
+        <div class="settings-control">
+          <label for="music">Musik</label>
+          <div class="slider-container">
+            <input type="range" id="music" min="0" max="100" value="50" />
+            <span class="icon">🎵</span>
+          </div>
+        </div>
+
+        <div class="settings-control">
+          <label for="audio">Audio</label>
+          <div class="slider-container">
+            <input type="range" id="audio" min="0" max="100" value="50" />
+            <span class="icon">🔊</span>
+          </div>
+        </div>
+
+        <button class="exit-btn" onclick="window.location.href='index.html'">
+          EXIT
+        </button>
+      </div>
+    </div>
+
+    <script src="js/setting.js"></script>
+  </body>
+</html>

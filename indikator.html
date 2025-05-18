@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indikator - StatMath</title>
+    <link rel="stylesheet" href="css/indikator.css" />
+  </head>
+  <body>
+    <div class="background">
+      <video autoplay muted loop playsinline id="bgVideo">
+        <source src="assets/index.mp4" type="video/mp4" />
+        Browser tidak mendukung video.
+      </video>
+      <button class="close-btn" onclick="window.history.back()">✕</button>
+
+      <div class="title-board">
+        <img src="https://img.icons8.com/color/48/000000/book.png" class="book-icon" alt="book" />
+        <h1>Indikator</h1>
+      </div>
+
+      <div class="slider-wrapper">
+        <div class="card-container">
+          <div class="card">
+            <p><strong>Mata Pelajaran</strong> : Statistika</p>
+            <p><strong>Kelas/Semester</strong> : VIII / Genap</p>
+          </div>
+          <div class="card">
+            <p><strong>Tujuan Pembelajaran</strong></p>
+            <p>1. Menentukan nilai mean, median, modus dari data tunggal.</p>
+            <p>
+              2. Menganalisis data dalam konteks pemecahan masalah statistik.
+            </p>
+          </div>
+          <div class="card">
+            <p><strong>Capaian Pembelajaran</strong></p>
+            <p>
+              Mereka dapat menentukan dan menafsirkan rerata (mean), median,
+              modus, dan jangkauan (range) dari data tersebut untuk
+              menyelesaikan masalah (termasuk membandingkan suatu data terhadap
+              kelompoknya, membandingkan dua kelompok data, memprediksi, membuat
+              keputusan).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <button class="nav-btn" onclick="navigate(-1)">&#10094;</button>
+        <div class="dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+        <button class="nav-btn" onclick="navigate(1)">&#10095;</button>
+      </div>
+    </div>
+
+    <script src="js/indikator.js"></script>
+  </body>
+</html>
