@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.controller {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+}
+
+.controller-left {
+  left: 20px;
+}
+
+.controller-right {
+  right: 20px;
+}
+
+.btn {
+  width: 64px;
+  height: 64px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: white;
+}

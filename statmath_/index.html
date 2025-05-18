@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StatMath</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <video autoplay muted loop playsinline id="bgVideo">
+        <source src="assets/index.mp4" type="video/mp4" />
+        Browser tidak mendukung video.
+      </video>
+
+      <div class="menu-icons">
+        <button class="icon-btn" title="Web" onclick="window.location.href='profil_web.html'">❗</button>
+        <button class="icon-btn" title="Profil" onclick="window.location.href='profil.html'">👩</button>
+        <button class="icon-btn" title="Pengaturan" onclick="window.location.href='setting.html'">⚙️</button>
+      </div>
+
+      <div class="title-board floating-board">
+        <h1>StatMath</h1>
+      </div>
+
+      <!-- Tombol Play -->
+      <button class="play-btn" onclick="startApp()">▶</button>
+
+      <!-- Menu Utama -->
+      <div id="main-menu" class="main-menu d-none">
+        <div class="menu-item">
+          <img src="https://img.icons8.com/color/96/000000/tasklist.png" alt="Indikator" />
+          <p>Indikator</p>
+        </div>
+        <div class="menu-item" onclick="showPopupMateri()">
+          <img src="https://img.icons8.com/color/96/000000/open-book--v2.png" alt="Materi" />
+          <p>Materi</p>
+        </div>
+        <div class="menu-item">
+          <img src="https://img.icons8.com/color/96/000000/edit-property.png" alt="Latihan" />
+          <p>Latihan Soal</p>
+        </div>
+      </div>
+
+      <div id="popup-materi" class="popup hidden">
+        <div class="popup-box">
+          <button class="close-btn" onclick="closePopup()">✖️</button>
+          <div class="popup-content">
+            <img src="https://img.icons8.com/color/96/teacher.png" alt="Paman Erik" class="paman-img" />
+            <div class="popup-text">
+              <h3><strong>Paman Erik</strong></h3>
+              <p>Tahukah kamu apa itu Statistika?</p>
+              <div class="popup-buttons">
+                <button onclick="jawabMateri(true)">Ya</button>
+                <button onclick="jawabMateri(false)">Tidak</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="popup-penjelasan" class="popup hidden">
+        <div class="popup-box">
+          <button class="close-btn" onclick="closePenjelasan()">✖️</button>
+          <div class="popup-content">
+            <img src="https://img.icons8.com/color/96/teacher.png" alt="Paman Erik" class="paman-img" />
+            <div class="popup-text">
+              <h3><strong>Paman Erik</strong></h3>
+              <p>
+                Statistika adalah ilmu yang mempelajari bagaimana cara
+                merencanakan, mengumpulkan, menganalisis, lalu
+                menginterpretasikan, dan akhirnya mempresentasikan data.
+              </p>
+              <button onclick="showPopupMulai()" class="lanjut-btn">▶️</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popup Mulai -->
+      <div id="popup-mulai" class="popup hidden">
+        <div class="popup-box">
+          <button class="close-btn" onclick="closeMulai()">✖️</button>
+          <div class="popup-content">
+            <img src="https://img.icons8.com/color/96/teacher.png" alt="Paman Erik" class="paman-img" />
+            <div class="popup-text">
+              <h3><strong>Paman Erik</strong></h3>
+              <p>Oke, mari kita belajar lebih jauh mengenai apa itu statistika</p>
+              <button onclick="window.location.href='materi.html'" class="mulai-btn">Mulai</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

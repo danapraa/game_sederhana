@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: #2c3e50;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.background {
+  background: url('../img/bg-materi.png') no-repeat center center/cover;
+  min-height: 100vh;
+  position: relative;
+  padding: 20px;
+}
+
+/* Tombol Close */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #FFA500;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+.close-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Papan Judul Materi */
+.title-board {
+  background: url('../img/board-title.png') no-repeat center;
+  background-size: contain;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto 30px;
+  max-width: 320px;
+}
+.title-board h1 {
+  font-size: 36px;
+  color: #a66dd4;
+  text-shadow: 2px 2px #fff;
+}
+
+/* Kontainer Materi */
+.materi-container {
+  background-color: #FDBF4F;
+  margin: auto;
+  padding: 30px 20px;
+  max-width: 720px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Item Materi */
+.materi-item {
+  background: #fff;
+  border-radius: 20px;
+  width: 180px;
+  padding: 15px 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.materi-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.materi-img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+.materi-judul {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.materi-judul.rata { color: orange; }
+.materi-judul.median { color: #3e8131; }
+.materi-judul.modus { color: #ea718d; }
+
+/* Tombol Buka */
+.btn-buka {
+  background-color: #a66dd4;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.btn-buka:hover {
+  background-color: #8e50c2;
+  transform: scale(1.05);
+}
